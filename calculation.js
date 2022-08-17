@@ -8,11 +8,12 @@ document.getElementById('btn-deposit').addEventListener('click',function(){
     const depositValue = document.getElementById('deposit-value');
     const totalValue = depositValue.innerText;
     const isStringValue = parseFloat(totalValue);
-    const mainDepositValue = isString + isStringValue;
+    const mainDepositValue = isStringValue + isString;
     depositValue.innerText = mainDepositValue;
     const mainBalenceValue = document.getElementById('main-balence-value');
     const totalBalence = mainBalenceValue.innerText;
     const isStringBalence = parseFloat(totalBalence);
-    mainBalenceValue.innerText = isStringBalence + mainDepositValue;
+    const total = isStringBalence + isString;
+    mainBalenceValue.innerText = total;
     
 });
