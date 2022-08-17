@@ -4,6 +4,13 @@ document.getElementById('btn-submit-button').addEventListener('click',function()
     const email = submitEmail.value;
     const submitPassword = document.getElementById('submit-password');
     const password = submitPassword.value;
-    email.value = '';
-    console.log(email,password);
-})
+    console.log(email, password);
+    submitEmail.value = '';
+    submitPassword.value = '';
+   
+});
+
+
+
+// ========================------------->>>>>>
+
